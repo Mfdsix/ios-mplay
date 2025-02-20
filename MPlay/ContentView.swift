@@ -30,7 +30,7 @@ struct ContentView: View {
                             RoundedRectangle(cornerRadius: 10)
                                 .fill(Color.gray.opacity(0.3))
                                 .frame(width: 80, height: 80)
-                                .shimmer() // 🔥 Tambahin shimmer
+                                .shimmer()
 
                             VStack(alignment: .leading, spacing: 6) {
                                 RoundedRectangle(cornerRadius: 5)

@@ -48,7 +48,7 @@ struct DetailView: View {
                         .bold()
                         .foregroundColor(.white)
                     
-                    Text("\(game.esrb_rating?.name ?? ""), \(game.released ?? "")")
+                    Text("\(game.esrb_rating?.name ?? ""), \(Helper.formatDate(game.released ?? ""))")
                         .font(.body)
                         .bold()
                         .foregroundColor(.white)

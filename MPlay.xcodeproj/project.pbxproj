@@ -18,6 +18,7 @@
 		055234F52D674E0200A8849B /* GameService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055234F42D674E0200A8849B /* GameService.swift */; };
 		055234F72D674FAC00A8849B /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055234F62D674FAC00A8849B /* GameViewModel.swift */; };
 		055234F92D67528C00A8849B /* ShimmerEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055234F82D67528C00A8849B /* ShimmerEffect.swift */; };
+		05E9FDA42D678FB50066B5DD /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E9FDA32D678FB50066B5DD /* Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		055234F42D674E0200A8849B /* GameService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameService.swift; sourceTree = "<group>"; };
 		055234F62D674FAC00A8849B /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		055234F82D67528C00A8849B /* ShimmerEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerEffect.swift; sourceTree = "<group>"; };
+		05E9FDA32D678FB50066B5DD /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				055234F42D674E0200A8849B /* GameService.swift */,
 				055234F62D674FAC00A8849B /* GameViewModel.swift */,
 				055234F82D67528C00A8849B /* ShimmerEffect.swift */,
+				05E9FDA32D678FB50066B5DD /* Helper.swift */,
 			);
 			path = MPlay;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 				055234F72D674FAC00A8849B /* GameViewModel.swift in Sources */,
 				055234EF2D6745A700A8849B /* ProfileView.swift in Sources */,
 				055234EB2D6744E800A8849B /* Game.swift in Sources */,
+				05E9FDA42D678FB50066B5DD /* Helper.swift in Sources */,
 				055234F92D67528C00A8849B /* ShimmerEffect.swift in Sources */,
 				055234DD2D67435400A8849B /* MPlayApp.swift in Sources */,
 			);

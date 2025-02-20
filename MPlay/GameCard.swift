@@ -50,6 +50,10 @@ struct GameCard: View {
                     .bold()
                     .foregroundColor(.white)
                 
+                Text(Helper.formatDate(game.released ?? ""))
+                    .foregroundColor(.white)
+                    .font(.caption)
+                
             HStack(spacing: 2) {
                 ForEach(0..<Int(game.rating), id: \.self) { _ in
                     Image(systemName: "star.fill")
