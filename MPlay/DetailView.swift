@@ -9,6 +9,7 @@ import SwiftUI
 
 struct DetailView: View {
     let game: Game
+    @State private var isAdded = false
     
     var body: some View {
         NavigationStack {
@@ -69,6 +70,28 @@ struct DetailView: View {
                             .font(.caption)
                     }
                     
+                    Button(action: {
+                        if isAdded {
+                            CoreDataManager.shared.removeFromWatchlist(id: game.id)
+                        } else {
+                            CoreDataManager.shared.addToWatchlist(
+                                id: game.id,
+                                title: game.name,
+                                image: game.background_image,
+                                releaseDate: game.released
+                            )
+                        }
+                        isAdded.toggle()
+                    }) {
+                        Text(isAdded ? "Remove from Watchlist" : "Add to Watchlist")
+                            .padding()
+                            .frame(maxWidth: .infinity)
+                            .background(isAdded ? Color.white : Color.orange)
+                            .foregroundColor(.black)
+                            .cornerRadius(10)
+                    }
+                    .padding()
+                    
                     Spacer()
                 }
                 .padding()
@@ -78,5 +101,9 @@ struct DetailView: View {
             .navigationBarTitleDisplayMode(.inline)
         }
         .preferredColorScheme(.dark)
+        .onAppear {
+            let watchlist = CoreDataManager.shared.getWatchlist()
+            isAdded = watchlist.contains { $0.id == game.id }
+        }
     }
 }

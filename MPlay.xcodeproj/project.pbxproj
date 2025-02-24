@@ -18,6 +18,10 @@
 		055234F52D674E0200A8849B /* GameService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055234F42D674E0200A8849B /* GameService.swift */; };
 		055234F72D674FAC00A8849B /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055234F62D674FAC00A8849B /* GameViewModel.swift */; };
 		055234F92D67528C00A8849B /* ShimmerEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055234F82D67528C00A8849B /* ShimmerEffect.swift */; };
+		05D8BDC82D6C1F3E00D944F8 /* WatchlistModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 05D8BDC62D6C1F3E00D944F8 /* WatchlistModel.xcdatamodeld */; };
+		05D8BDCA2D6C1FDB00D944F8 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D8BDC92D6C1FDB00D944F8 /* CoreDataManager.swift */; };
+		05D8BDCC2D6C213100D944F8 /* GameListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D8BDCB2D6C213100D944F8 /* GameListView.swift */; };
+		05D8BDD02D6C220100D944F8 /* FavoriteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D8BDCF2D6C220100D944F8 /* FavoriteListView.swift */; };
 		05E9FDA42D678FB50066B5DD /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E9FDA32D678FB50066B5DD /* Helper.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +38,10 @@
 		055234F42D674E0200A8849B /* GameService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameService.swift; sourceTree = "<group>"; };
 		055234F62D674FAC00A8849B /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		055234F82D67528C00A8849B /* ShimmerEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerEffect.swift; sourceTree = "<group>"; };
+		05D8BDC72D6C1F3E00D944F8 /* WatchlistModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WatchlistModel.xcdatamodel; sourceTree = "<group>"; };
+		05D8BDC92D6C1FDB00D944F8 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		05D8BDCB2D6C213100D944F8 /* GameListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListView.swift; sourceTree = "<group>"; };
+		05D8BDCF2D6C220100D944F8 /* FavoriteListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteListView.swift; sourceTree = "<group>"; };
 		05E9FDA32D678FB50066B5DD /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,6 +87,10 @@
 				055234F62D674FAC00A8849B /* GameViewModel.swift */,
 				055234F82D67528C00A8849B /* ShimmerEffect.swift */,
 				05E9FDA32D678FB50066B5DD /* Helper.swift */,
+				05D8BDC62D6C1F3E00D944F8 /* WatchlistModel.xcdatamodeld */,
+				05D8BDC92D6C1FDB00D944F8 /* CoreDataManager.swift */,
+				05D8BDCB2D6C213100D944F8 /* GameListView.swift */,
+				05D8BDCF2D6C220100D944F8 /* FavoriteListView.swift */,
 			);
 			path = MPlay;
 			sourceTree = "<group>";
@@ -167,8 +179,12 @@
 				055234ED2D67458100A8849B /* DetailView.swift in Sources */,
 				055234F72D674FAC00A8849B /* GameViewModel.swift in Sources */,
 				055234EF2D6745A700A8849B /* ProfileView.swift in Sources */,
+				05D8BDCA2D6C1FDB00D944F8 /* CoreDataManager.swift in Sources */,
 				055234EB2D6744E800A8849B /* Game.swift in Sources */,
+				05D8BDC82D6C1F3E00D944F8 /* WatchlistModel.xcdatamodeld in Sources */,
 				05E9FDA42D678FB50066B5DD /* Helper.swift in Sources */,
+				05D8BDD02D6C220100D944F8 /* FavoriteListView.swift in Sources */,
+				05D8BDCC2D6C213100D944F8 /* GameListView.swift in Sources */,
 				055234F92D67528C00A8849B /* ShimmerEffect.swift in Sources */,
 				055234DD2D67435400A8849B /* MPlayApp.swift in Sources */,
 			);
@@ -374,6 +390,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		05D8BDC62D6C1F3E00D944F8 /* WatchlistModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				05D8BDC72D6C1F3E00D944F8 /* WatchlistModel.xcdatamodel */,
+			);
+			currentVersion = 05D8BDC72D6C1F3E00D944F8 /* WatchlistModel.xcdatamodel */;
+			path = WatchlistModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 055234D12D67435400A8849B /* Project object */;
 }
