@@ -25,12 +25,13 @@ class CoreDataManager {
         return persistentContainer.viewContext
     }
 
-    func addToWatchlist(id: Int, title: String, image: String?, releaseDate: String?) {
+    func addToWatchlist(id: Int, title: String, image: String?, releaseDate: String?, rating: Double?) {
         let watchlistItem = Watchlist(context: context)
         watchlistItem.id = Int64(id)
         watchlistItem.title = title
         watchlistItem.image = image
         watchlistItem.releaseDate = releaseDate
+        watchlistItem.rating = rating ?? 0
 
         saveContext()
     }

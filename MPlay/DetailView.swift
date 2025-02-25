@@ -78,7 +78,8 @@ struct DetailView: View {
                                 id: game.id,
                                 title: game.name,
                                 image: game.background_image,
-                                releaseDate: game.released
+                                releaseDate: game.released,
+                                rating: game.rating
                             )
                         }
                         isAdded.toggle()
