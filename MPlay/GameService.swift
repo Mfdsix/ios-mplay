@@ -11,7 +11,7 @@ class GameService {
     static let shared = GameService()
     
     private let apiURL = "https://api.rawg.io/api"
-    private let apiKey = "67ff8b17d64b45029097223412ad0d1c"
+    private let apiKey = "secret"
 
     func fetchGames() async throws -> [Game] {
         guard let url = URL(string: apiURL + "/games?key=" + apiKey) else {
