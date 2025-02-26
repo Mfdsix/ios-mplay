@@ -24,7 +24,7 @@ struct FavoriteListView: View {
                             background_image: item.image,
                             rating: item.rating,
                             rating_top: 5,
-                            esrb_rating: nil,
+                            esrb_rating: item.esrb != nil ? ESRBRating(id: 0, slug: item.esrb!, name: item.esrb!) : nil,
                             platforms: []
                         ))) {
                             HStack {
@@ -45,15 +45,8 @@ struct FavoriteListView: View {
                                         .font(.caption)
                                     
                                     HStack(spacing: 2) {
-                                        ForEach(0..<Int(item.rating), id: \.self) { _ in
-                                            Image(systemName: "star.fill")
-                                                .foregroundColor(.yellow)
-                                        }
-
-                                        if item.rating.truncatingRemainder(dividingBy: 1) != 0 {
-                                            Image(systemName: "star.leadinghalf.filled")
-                                                .foregroundColor(.yellow)
-                                        }
+                                        Image(systemName: "star.fill")
+                                            .foregroundColor(.yellow)
 
                                         Text("\(item.rating, specifier: "%.1f")")
                                             .foregroundColor(.white)

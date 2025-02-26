@@ -25,13 +25,14 @@ class CoreDataManager {
         return persistentContainer.viewContext
     }
 
-    func addToWatchlist(id: Int, title: String, image: String?, releaseDate: String?, rating: Double?) {
+    func addToWatchlist(id: Int, title: String, image: String?, releaseDate: String?, rating: Double?, esrb: String?) {
         let watchlistItem = Watchlist(context: context)
         watchlistItem.id = Int64(id)
         watchlistItem.title = title
         watchlistItem.image = image
         watchlistItem.releaseDate = releaseDate
         watchlistItem.rating = rating ?? 0
+        watchlistItem.esrb = esrb
 
         saveContext()
     }
@@ -48,7 +49,7 @@ class CoreDataManager {
 
     func removeFromWatchlist(id: Int) {
         let fetchRequest: NSFetchRequest<Watchlist> = Watchlist.fetchRequest()
-        fetchRequest.predicate = NSPredicate(format: "id == %@", id as CVarArg)
+        fetchRequest.predicate = NSPredicate(format: "id == %d", id as CVarArg)
 
         do {
             let items = try context.fetch(fetchRequest)
